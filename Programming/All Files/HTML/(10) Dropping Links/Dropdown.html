@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Dropdown.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="menu-bar">
+        <ul>
+            <li class="active"><a href="#">Home</a><ion-icon class="first-icon" name="home-outline"></ion-icon>
+            </li>
+
+            <li>
+                <a href="#">About Us</a><ion-icon class="second-icon" name="people"></ion-icon>
+
+                <div class="first-dropdown">
+                    <ul class="drop-ul" >
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Team</a></li>
+                    </ul>
+                </div>
+            </li>
+            <!-- </li> -->
+
+
+            <li>
+                <a href="#">Services</a><ion-icon name="copy-outline"></ion-icon>
+
+                <div class="second-dropdown">
+                    <ul class="drop-ul2">
+                        <li><a href="#"><span class="nowrap"><span>Web</span> Designing</a></li>
+                        <li class="sub-menu1">
+                            <a href="#">Marketing</a>
+
+                            <div class="sub3-menu">
+                                <ol class="drop-ul3">
+                                    <li><a href="#">SEO</a></li>
+                                    <li><a href="#">Social Media</a></li>
+                                    <li><a href="#"> <span class="nowrap">Email </span>Marketing</a></li>
+                                </ol>
+                            </div>
+                            <ion-icon id="greaterthan" name="chevron-forward-outline"></ion-icon>
+                        </li>
+
+                        <li class="sub-menu2">
+                            <a href="#">Mobile App</a>
+
+                            <div class="sub4-menu">
+                                <ol class="drop-ul4">
+                                    <li><a href="#">Andriod Apps</a></li>
+                                    <li><a href="#">iOS Apps</a></li>
+                                    <li><a href="#"> Email Ionic <span class="nowrap">Apps</span></a></li>
+                                    <li><a href="#">Flutter Apps</a></li>
+                                    <li><a href="#">Unity Apps</a></li>
+
+                                </ol>
+                            </div>
+
+                            <ion-icon id="greaterthan" name="chevron-forward-outline"></ion-icon>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><a href="#">Clients</a><ion-icon name="people"></ion-icon></li>
+            <li><a href="#">investors</a><ion-icon name="man"></ion-icon></li>
+            <li><a href="#">Pricing</a><ion-icon name="card"></ion-icon></li>
+
+            <li class="li-second-last-child">
+                <a href="#">Training</a><ion-icon name="create-outline"></ion-icon></ion-icon>
+
+                <div class="third-dropdown">
+                    <ol>
+                        <li><a href="#">Testing</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Ui Designing</a></li>
+                    </ol>
+                </div>
+            </li>
+
+            <li><a href="#">Contact</a><ion-icon name="call"></ion-icon></li>
+        </ul>
+    </div>
+</body>
+</html>

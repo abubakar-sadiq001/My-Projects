@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 | Screen popup</title>
+    <link rel="stylesheet" href="Screen Popup.css">
+</head>
+<body>
+   <div class="container">
+    <div class="top-contents">
+        <h3>Login to continue</h3>
+
+        <svg id="close" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="crayons-icon c-btn__icon"><path d="m12 10.586 4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636l4.95 4.95z"></path></svg>
+
+    </div>
+    <div class="page-contents">
+         <!-- <img src=""> -->
+        <img id="dev-img" src="DEV.webp" width="65px">
+
+        <p>We're a place where coders share, stay up-to-date and grow their careers.</p>
+        <button id="login">Log in</button>
+        <button id="create-account">Create account</button>
+    </div>
+   </div>
+
+   <script>
+    const closeEl = document.getElementById('close');
+
+     closeEl.addEventListener('click', () => {
+
+       const containerEl = document.querySelector('.container');
+       containerEl.remove();
+    })
+   </script>
+</body>
+</html>

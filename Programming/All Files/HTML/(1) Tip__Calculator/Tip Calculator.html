@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="Tip Calculator.css">
+  <!-- <link rel="stylesheet" href=""> -->
+</head>
+<body>
+  <div class="container">
+    <h1>Tip Calculator</h1>
+      <p>Enter the bill amount and tip percentage to calculate the total</p>
+      <label>Bill amount:</label><br>
+  <form >
+      <input type="number" id="bill-amount"><br>
+      <label>Tip percentage:</label><br>
+      <input type="number" id="tip-percent"><br>
+      <button id="btn">Calculate</button><br>
+      <input type="reset" id="reset">
+      <p>Total: <span id="total"></span></p>
+  </form>  
+      
+  </div>
+  <script>
+    const billAmountEl = document.getElementById('bill-amount');
+    const tipAmountEl = document.getElementById('tip-percent');
+    const buttonEl = document.getElementById('btn');
+
+    let totalEl = document.getElementById('total');
+    let resetEl = document.getElementById('reset');
+
+    resetEl.addEventListener("click", resetinput);
+    function resetinput() {
+      totalEl.innerHTML = `$ ${0}`;
+    }
+
+   
+    buttonEl.addEventListener('click', (e) => {
+
+      console.log(Number(billAmountEl.value).toFixed(2) * Number(1 + tipAmountEl.value / 100).toFixed(2));
+      const total = document.getElementById('total').innerText = `$ ${Number(billAmountEl.value).toFixed(2) * Number(1 + tipAmountEl.value / 100).toFixed(2)}`;
+      
+      e.preventDefault();
+    });
+  
+   
+  </script>
+</body>
+</html>
