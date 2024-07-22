@@ -72,7 +72,6 @@ nav ul li a:focus {
     font-size: 25px;
     position: absolute;
     color: rgb(255, 255, 255);
-    background-color: blue;
     background-color: #02020B;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -231,7 +230,7 @@ nav ul li a:focus {
     gap: 20px;
 }
 .btns .shop-btn {
-    border: 2px solid rgb(255, 149, 167);
+    border: 2px solid #EFAAC4;
     color: rgb(82, 81, 81);
     cursor: pointer;
     border-radius: 25px;
@@ -243,13 +242,13 @@ nav ul li a:focus {
     padding: 10px 15px;
 }
 .btns .shop-btn:hover {
-    background: rgb(220, 7, 135);
+    background: #EFAAC4;
     color: #fff;
     transition: all 0.40s;
 }
 .btns .play-btn {
     font-size: 20px;
-    background-color: rgb(174, 0, 255);
+    background-color: #EFAAC4;
     padding: 12px 15px;
     border: none;
     color: #fff;
@@ -267,6 +266,7 @@ nav ul li a:focus {
     font-size: 20px;
     font-weight: 500;
     margin: 10px -10px;
+    color: #EFAAC4;
 }
 @media (max-width: 1113px) {
     .hero-section {
@@ -938,10 +938,10 @@ footer .display-flex {
 .display-flex .col-1 .links-heading::before {
     content: '';
     width: 40px;
-    background: rgb(237, 75, 172);
+    background: #000;
     position: absolute;
-    height: 2px;
-    margin-top: 22px;
+    height: 3px;
+    margin-top: 25px;
 }
 .col-1 ul {
     margin-top: 10px;
